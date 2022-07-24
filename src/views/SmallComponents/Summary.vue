@@ -4,13 +4,13 @@
       class="p-4 bg-gradient-to-r from-slate-800 via-slate-900 to-black rounded-lg"
      
     >
-      <h1 class="text-slate-100">Summary</h1>
+      <h1 class="text-slate-100 text-4xl my-2">Summary</h1>
       <p class="text-slate-100">
         I am a Graduate in Bachelor's of Computer Applications and learnt some
         skills related to the field of web development
       </p>
       <button
-        class="px-4 py-2 bg-transparent border-2 border-indigo-400 rounded-lg text-indigo-400"
+        class="px-4 py-2 bg-transparent border-2 border-indigo-400 rounded-lg text-indigo-400 my-2"
         @click="showHobbies = !showHobbies"
       >
         Hobbies
