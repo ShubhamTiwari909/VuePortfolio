@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import { ref } from "vue";
+import { ref } from "@vue/composition-api"
 export default {
   name: "Skills",
   setup() {
