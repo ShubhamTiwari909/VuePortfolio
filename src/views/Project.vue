@@ -27,8 +27,8 @@
             {{ project.ProjectDescription }}
           </p>
 
-          <p class="mt-5 text-center text-indigo-700">Technologies Used</p>
-          <div class="grid grid-cols-2 md:grid-cols-4 md:my-3">
+          <p class="mt-4 text-center text-indigo-700">Technologies Used</p>
+          <div class="grid grid-cols-2 md:grid-cols-4 md:my-2">
             <div
               v-for="(languages, index) in project.LanguagesUsed"
               :key="index"
