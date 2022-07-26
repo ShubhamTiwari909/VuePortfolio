@@ -1,37 +1,45 @@
 <template>
   <div
-    class="grid grid-cols-1 md:grid-cols-3 md:gap-28 place-content-center py-10 px-3 bg-slate-100"
+    class="grid grid-cols-1 lg:place-content-center lg:gap-28 place-content-center py-10 px-3 bg-slate-100"
   >
     <div
       v-for="project in projectData"
       :key="project.ProjectTitle"
-      class="rounded-2xl my-5 wow animate__animated animate__rubberBand Card"
+      class="rounded-2xl my-5 mx-2 md:mx-16 md:grid md:grid-cols-2 wow animate__animated animate__rubberBand Card"
     >
       <div>
         <img :src="project.ProjectImage" style="border-radius: 5%" />
       </div>
 
       <div :id="project.ProjectId">
-        <h1 class="pt-4 pb-4 text-2xl text-center">
-          {{ project.ProjectTitle }}
-        </h1>
+        <div class="flex justify-between pt-4 pb-4 mx-3 md:mx-5">
+          <h1 class="text-2xl text-center">
+            {{ project.ProjectTitle }}
+          </h1>
+          <h1
+            class="text-xs md:text-sm text-slate-700 text-center rounded-lg mt-2"
+          >
+            {{ project.Date }}
+          </h1>
+        </div>
         <div class="px-3">
           <p class="text-xs md:text-sm wrap-words">
             {{ project.ProjectDescription }}
           </p>
-          <p
-            class="text-xs md:text-sm text-slate-700 text-center border-2 border-violet-400 px-4 py-2 rounded-full"
-          >
-            {{ project.Date }}
-          </p>
+
           <p class="mt-5 text-center text-indigo-700">Technologies Used</p>
-          <div class="grid grid-cols-2 md:my-3">
+          <div class="grid grid-cols-2 md:grid-cols-4 md:my-3">
             <div
               v-for="(languages, index) in project.LanguagesUsed"
               :key="index"
               class="text-xs text-center mx-2 my-2 md:text-sm px-3 py-1 border-2 border-violet-300 rounded-full"
             >
-              <a :href="languages.languageLink" target="_blank" class="text-indigo-800">{{ languages.languageName }}</a>
+              <a
+                :href="languages.languageLink"
+                target="_blank"
+                class="text-indigo-800"
+                >{{ languages.languageName }}</a
+              >
             </div>
           </div>
           <div class="flex justify-center">
@@ -77,7 +85,7 @@ export default {
           },
           {
             languageName: "CSS3",
-            languageLink: "https://www.w3schools.com/css/"
+            languageLink: "https://www.w3schools.com/css/",
           },
           {
             languageName: "JAVASCRIPT",
@@ -102,13 +110,13 @@ export default {
         ProjectImage: Project2,
         Date: "May 2022",
         LanguagesUsed: [
-         {
+          {
             languageName: "HTML5",
             languageLink: "https://www.w3schools.com/html/",
           },
           {
             languageName: "CSS3",
-            languageLink: "https://www.w3schools.com/css/"
+            languageLink: "https://www.w3schools.com/css/",
           },
           {
             languageName: "JAVASCRIPT",
@@ -120,7 +128,8 @@ export default {
           },
           {
             languageName: "BOOTSTRAP 5",
-            languageLink: "https://getbootstrap.com/docs/5.0/getting-started/introduction/",
+            languageLink:
+              "https://getbootstrap.com/docs/5.0/getting-started/introduction/",
           },
           {
             languageName: "REACT JS",
@@ -143,7 +152,7 @@ export default {
           },
           {
             languageName: "CSS3",
-            languageLink: "https://www.w3schools.com/css/"
+            languageLink: "https://www.w3schools.com/css/",
           },
           {
             languageName: "JAVASCRIPT",
@@ -174,7 +183,7 @@ export default {
           },
           {
             languageName: "CSS3",
-            languageLink: "https://www.w3schools.com/css/"
+            languageLink: "https://www.w3schools.com/css/",
           },
           {
             languageName: "JAVASCRIPT",
@@ -199,13 +208,13 @@ export default {
         ProjectImage: Project5,
         Date: "july 2022",
         LanguagesUsed: [
-         {
+          {
             languageName: "HTML5",
             languageLink: "https://www.w3schools.com/html/",
           },
           {
             languageName: "CSS3",
-            languageLink: "https://www.w3schools.com/css/"
+            languageLink: "https://www.w3schools.com/css/",
           },
           {
             languageName: "JAVASCRIPT",
