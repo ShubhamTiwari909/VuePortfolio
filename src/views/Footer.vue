@@ -1,7 +1,7 @@
 <template>
   <div>
     <footer class="text-gray-400 bg-gray-900 body-font">
-      <div class="container px-5 py-10 mx-auto">
+      <div class="container px-5 py-20 mx-auto">
         <div class="flex flex-wrap md:text-left text-center -mx-4">
           <div class="lg:w-1/3 md:w-1/2 w-full px-4">
             <h2

@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-24 lg:mt-40 flex justify-center mx-10 mb-10">
+  <div class="pt-24 lg:pt-40 flex justify-center px-10 pb-32 bg-slate-200">
     <div
       class="p-4 bg-gradient-to-r from-slate-800 via-slate-900 to-black rounded-lg"
      
