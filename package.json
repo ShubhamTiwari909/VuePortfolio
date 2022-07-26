@@ -9,7 +9,6 @@
   "dependencies": {
     "@vue/composition-api": "^1.7.0",
     "animate.css": "^4.1.1",
-    "bootstrap-vue": "^2.22.0",
     "core-js": "^3.8.3",
     "transx": "^0.3.6",
     "vue": "^2.6.14",

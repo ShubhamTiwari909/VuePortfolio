@@ -63,11 +63,11 @@
 <script>
 import "animate.css";
 import { ref } from "vue";
-import Project1 from "../../assets/images/Project1.jpg";
-import Project2 from "../../assets/images/Project2.jpg";
-import Project3 from "../../assets/images/Project3.jpg";
-import Project4 from "../../assets/images/Project4.jpg";
-import Project5 from "../../assets/images/Project5.jpg";
+import Project1 from "../assets/images/Project1.jpg";
+import Project2 from "../assets/images/Project2.jpg";
+import Project3 from "../assets/images/Project3.jpg";
+import Project4 from "../assets/images/Project4.jpg";
+import Project5 from "../assets/images/Project5.jpg";
 
 
 export default {
