@@ -62,7 +62,7 @@
 
 <script>
 import "animate.css";
-import { ref } from "vue";
+import { ref } from "@vue/composition-api"
 import Project1 from "../assets/images/Project1.jpg";
 import Project2 from "../assets/images/Project2.jpg";
 import Project3 from "../assets/images/Project3.jpg";
