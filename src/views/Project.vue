@@ -1,58 +1,61 @@
 <template>
-  <div
-    class="grid grid-cols-1 lg:place-content-center lg:gap-28 place-content-center py-10 px-3 bg-slate-100"
-  >
+  <div class="bg-slate-100">
+    <h1 class="text-indigo-800 text-center text-3xl pt-3">Projects</h1>
     <div
-      v-for="project in projectData"
-      :key="project.ProjectTitle"
-      class="rounded-2xl my-5 mx-2 md:mx-16 md:grid md:grid-cols-2 wow animate__animated animate__rubberBand Card"
+      class="grid grid-cols-1 lg:place-content-center lg:gap-28 place-content-center py-10 px-3"
     >
-      <div>
-        <img :src="project.ProjectImage" style="border-radius: 5%" />
-      </div>
-
-      <div :id="project.ProjectId">
-        <div class="flex justify-between pt-4 pb-4 mx-3 md:mx-5">
-          <h1 class="text-2xl text-center text-indigo-900">
-            {{ project.ProjectTitle }}
-          </h1>
-          <h1
-            class="text-xs md:text-sm text-indigo-900 text-center rounded-lg mt-2.5"
-          >
-            {{ project.Date }}
-          </h1>
+      <div
+        v-for="project in projectData"
+        :key="project.ProjectTitle"
+        class="rounded-2xl my-5 mx-2 md:mx-16 md:grid md:grid-cols-2 wow animate__animated animate__rubberBand Card"
+      >
+        <div class="place-self-center">
+          <img :src="project.ProjectImage" style="border-radius: 5%" />
         </div>
-        <div class="px-3">
-          <p class="text-xs md:text-sm wrap-words">
-            {{ project.ProjectDescription }}
-          </p>
 
-          <p class="mt-4 text-center text-indigo-700">Technologies Used</p>
-          <div class="grid grid-cols-2 md:grid-cols-4 md:my-2">
-            <div
-              v-for="(languages, index) in project.LanguagesUsed"
-              :key="index"
-              class="text-xs text-center mx-2 my-2 md:text-sm px-3 py-1 border-2 border-violet-300 rounded-full"
+        <div :id="project.ProjectId">
+          <div class="flex justify-between pt-4 pb-4 mx-3 md:mx-5">
+            <h1 class="text-2xl text-center text-indigo-900">
+              {{ project.ProjectTitle }}
+            </h1>
+            <h1
+              class="text-xs md:text-sm text-indigo-900 text-center rounded-lg mt-2.5"
             >
-              <a
-                :href="languages.languageLink"
-                target="_blank"
-                class="text-indigo-800"
-                >{{ languages.languageName }}</a
-              >
-            </div>
+              {{ project.Date }}
+            </h1>
           </div>
-          <div class="flex justify-center">
-            <button
-              class="border-2 border-blue-300 px-4 py-2 rounded-full mt-3 mb-2"
-            >
-              <a
-                :href="project.ProjectLink"
-                target="_blank"
-                class="text-blue-600"
-                >Open</a
+          <div class="px-3">
+            <p class="text-xs md:text-sm wrap-words text-slate-600">
+              {{ project.ProjectDescription }}
+            </p>
+
+            <p class="mt-4 text-center text-indigo-700">Technologies Used</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 md:my-2">
+              <div
+                v-for="(languages, index) in project.LanguagesUsed"
+                :key="index"
+                class="text-xs text-center mx-2 my-2 md:text-sm px-3 py-1 border-2 border-violet-300 rounded-full"
               >
-            </button>
+                <a
+                  :href="languages.languageLink"
+                  target="_blank"
+                  class="text-indigo-800"
+                  >{{ languages.languageName }}</a
+                >
+              </div>
+            </div>
+            <div class="flex justify-center bg-slate-700 md:bg-slate-900 rounded-2xl mt-5 py-3 -mx-4 md:-mx-4">
+              <button
+                class="border-2 border-blue-300 px-4 py-2 rounded-full mt-2 mb-2 animate-pulse"
+              >
+                <a
+                  :href="project.ProjectLink"
+                  target="_blank"
+                  class="text-blue-400"
+                  >Open</a
+                >
+              </button>
+            </div>
           </div>
         </div>
       </div>

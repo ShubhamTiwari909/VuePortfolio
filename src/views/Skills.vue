@@ -1,6 +1,6 @@
 <template>
   <div class="skillBg">
-    <h1 class="text-center text-slate-100 py-3">Skills</h1>
+    <h1 class="text-indigo-100 text-center text-3xl py-5">Skills</h1>
     <div class="flex justify-center mt-2 mb-8 space-x-10 text-slate-200">
       <button @click="frontend" v-bind:class="buttonStyle">Frontend</button>
       <button @click="backend" v-bind:class="buttonStyle">Backend</button>
